@@ -3,8 +3,8 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
-    color: #333;
+    background-color: #222;
+    color: #ccc;
 }
 
 .container {
@@ -38,13 +38,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ccc;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ff6600;
+    color: #fff;
 }
 
 .hero {
@@ -70,7 +70,7 @@ nav ul li a:hover {
 
 .hero .btn {
     padding: 10px 30px;
-    background-color: #ff6600;
+    background-color: #555;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -78,11 +78,11 @@ nav ul li a:hover {
 }
 
 .hero .btn:hover {
-    background-color: #e65c00;
+    background-color: #777;
 }
 
 .features {
-    background-color: #fff;
+    background-color: #333;
     text-align: center;
     padding: 60px 0;
 }
@@ -97,16 +97,17 @@ nav ul li a:hover {
 .features .feature i {
     font-size: 48px;
     margin-bottom: 20px;
-    color: #ff6600;
+    color: #555;
 }
 
 .features .feature h2 {
     font-size: 24px;
     margin-bottom: 10px;
+    color: #fff;
 }
 
 .gallery {
-    background-color: #f2f2f2;
+    background-color: #222;
     padding: 60px 0;
     text-align: center;
 }
@@ -131,7 +132,7 @@ nav ul li a:hover {
 }
 
 .testimonials {
-    background-color: #fff;
+    background-color: #333;
     text-align: center;
     padding: 60px 0;
 }
@@ -145,23 +146,24 @@ nav ul li a:hover {
     font-size: 20px;
     font-style: italic;
     margin-bottom: 10px;
+    color: #ccc;
 }
 
 .testimonials .testimonial h3 {
     font-size: 18px;
     font-weight: normal;
-    color: #666;
+    color: #888;
 }
 
 footer {
     background-color: #1a1a1a;
-    color: #fff;
+    color: #ccc;
     text-align: center;
     padding: 20px 0;
 }
 
 footer .social a {
-    color: #fff;
+    color: #ccc;
     margin: 0 10px;
     text-decoration: none;
     font-size: 20px;
@@ -169,9 +171,10 @@ footer .social a {
 }
 
 footer .social a:hover {
-    color: #ff6600;
+    color: #fff;
 }
 
+/* Animaciones */
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -201,5 +204,10 @@ footer .social a:hover {
     to {
         opacity: 1;
     }
+}
+
+section {
+    padding: 40px 0;
+    animation: fadeIn 1s ease-out; /* Animación agregada */
 }
 
