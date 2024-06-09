@@ -31,10 +31,11 @@ nav ul {
     margin: 0;
     padding: 10px;
     display: flex;
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
 }
 
 nav ul li {
-    margin-left: 115px;
+    margin-left: 20px; /* Reduce el espacio entre los elementos */
 }
 
 nav ul li a {
