@@ -315,7 +315,7 @@ nav ul li a:hover {
 
 /* Team Section Styles */
 .team-member {
-   position: relative;
+    position: relative;
     flex: 1 1 30%;
     margin: 20px;
     background-color: #ffffff;
