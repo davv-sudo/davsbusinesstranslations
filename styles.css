@@ -345,6 +345,51 @@ nav ul li a:hover {
     color: #666;
   }
 
+
+/* Styles for language selector */
+.language-selector {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .language-selector label {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .language-selector select {
+    font-size: 16px;
+    padding: 8px 12px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  .language-selector select:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .language-selector select option {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .language-selector select option:checked {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .language-selector select option:hover {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+
 footer {
     background-color: #031932d9;
     color: #ccc;
@@ -472,53 +517,3 @@ section {
         max-width: 1170px;
     }
 }
-
-
-
-
-
-
-/* Styles for language selector */
-.language-selector {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  .language-selector label {
-    font-size: 16px;
-    color: #333;
-  }
-  
-  .language-selector select {
-    font-size: 16px;
-    padding: 8px 12px;
-    border: 2px solid #333;
-    border-radius: 5px;
-    background-color: #fff;
-    color: #333;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
-  
-  .language-selector select:focus {
-    outline: none;
-    border-color: #007bff;
-  }
-  
-  .language-selector select option {
-    background-color: #fff;
-    color: #333;
-  }
-  
-  .language-selector select option:checked {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  .language-selector select option:hover {
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-  }
-  
