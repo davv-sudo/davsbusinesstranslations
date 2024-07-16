@@ -24,11 +24,34 @@
           <li><a href="pricing.html">Precios</a></li>
           <li><a href="team.html">Equipo</a></li>
           <li><a href="contact.html">Contacto</a></li>
+
+
+          <li><a href="FR/index-fr.html">Français</a></li>
+
+          
         </ul>
       </nav>
     </div>
   </header>
 
+
+   <!-- Selector de idioma -->
+  <div class="language-selector">
+    <label for="lang-selector">Language:</label>
+    <select id="lang-selector" onchange="changeLanguage(this.value)">
+      <option value="es">Español</option>
+      <option value="fr">Français</option>
+    </select>
+  </div>
+  <section class="hero">
+    <div class="container">
+      <h1>Dav's Business & Translations</h1>
+      <p>Soluciones integrales para tus necesidades empresariales y de traducción.</p>
+      <a href="services.html" class="btn">Descubre nuestros servicios</a>
+    </div>
+
+
+    
   <section class="hero">
     <div class="container">
       <h1>Dav's Business & Translations</h1>
@@ -118,5 +141,19 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+
+
+  <script>
+  function changeLanguage(lang) {
+    var url;
+    if (lang === 'fr') {
+      url = 'FR/' + window.location.pathname.split('/').pop().replace('.html', '-fr.html');
+    } else {
+      url = window.location.pathname.split('/').pop().replace('-fr.html', '.html');
+    }
+    window.location.href = url;
+  }
+</script>
+  
 </body>
 </html>
