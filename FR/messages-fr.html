@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lire les messages - Dav's Business & Translations</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="logo.png" type="image/png" sizes="any">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Dav's Business & Translations</h1>
+      <nav>
+        <ul>
+          <li><a href="index-fr.html">Accueil</a></li>
+          <li><a href="about-fr.html">À propos de nous</a></li>
+          <li><a href="services-fr.html">Services</a></li>
+          <li><a href="pricing-fr.html">Tarifs</a></li>
+          <li><a href="team-fr.html">Équipe</a></li>
+          <li><a href="contact-fr.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h2>Lire les messages</h2>
+      <form id="message-form" action="process_message.php" method="post" enctype="multipart/form-data">
+        <div>
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div>
+          <label for="file">Joindre un fichier :</label>
+          <input type="file" id="file" name="file">
+        </div>
+        <button type="submit">Envoyer le message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Dav's Business & Translations. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+</html>
