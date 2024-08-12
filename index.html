@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Matomo Tag Manager -->
-<script>
-  var _mtm = window._mtm = window._mtm || [];
-  _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
-  (function() {
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src='http://192.168.43.15/matomo/js/container_s5KedhPB.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Matomo Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dav's Business & Translations</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="icon" href="logo.png" type="image/png" sizes="any">
-  <!-- Matomo Tag Manager -->
+  <!-- Matomo -->
 <script>
-  var _mtm = window._mtm = window._mtm || [];
-  _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
   (function() {
+    var u="//192.168.43.15/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src='http://192.168.43.15/matomo/js/container_s5KedhPB.js'; s.parentNode.insertBefore(g,s);
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
-<!-- End Matomo Tag Manager -->
+<!-- End Matomo Code -->
   </head>
-  
 <body>
   <header>
     <div class="container">
@@ -43,26 +37,20 @@
           <li><a href="pricing.html">Precios</a></li>
           <li><a href="team.html">Equipo</a></li>
           <li><a href="contact.html">Contacto</a></li>
-
-
+          
           <li><a href="FR/index-fr.html">Français</a></li>
 
-          
         </ul>
       </nav>
     </div>
-    
   </header>
 
-
-   <!-- Selector de idioma -->
+  <!-- Selector de idioma -->
   <div class="language-selector">
     <label for="lang-selector">Language:</label>
     <select id="lang-selector" onchange="changeLanguage(this.value)">
       <option value="es">Español</option>
       <option value="fr">Français</option>
-      
-      <option value="en">English</option>
     </select>
   </div>
   <section class="hero">
@@ -72,14 +60,6 @@
       <a href="services.html" class="btn">Descubre nuestros servicios</a>
     </div>
 
-
-    
-  <section class="hero">
-    <div class="container">
-      <h1>Dav's Business & Translations</h1>
-      <p>Soluciones integrales para tus necesidades empresariales y de traducción.</p>
-      <a href="services.html" class="btn">Descubre nuestros servicios</a>
-    </div>
   </section>
 
   <section class="features">
@@ -145,7 +125,7 @@
         <a href="#"><i class="fab fa-linkedin-in"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
       </div>
-       <p>&copy; 2024 Dav's Business & Translations. Todos los derechos reservados.</p>
+      <p>&copy; 2024 Dav's Business & Translations. Todos los derechos reservados.</p>
     </div>
   </footer>
 
@@ -165,7 +145,7 @@ s0.parentNode.insertBefore(s1,s0);
 <!--End of Tawk.to Script-->
 
 
-  <script>
+<script>
   function changeLanguage(lang) {
     var url;
     if (lang === 'fr') {
@@ -176,15 +156,6 @@ s0.parentNode.insertBefore(s1,s0);
     window.location.href = url;
   }
 </script>
-  <!-- Matomo Tag Manager -->
-<script>
-  var _mtm = window._mtm = window._mtm || [];
-  _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
-  (function() {
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src='http://192.168.43.15/matomo/js/container_s5KedhPB.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Matomo Tag Manager -->
+
 </body>
 </html>
