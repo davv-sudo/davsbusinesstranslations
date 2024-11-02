@@ -49,18 +49,21 @@
 <div class="language-selector">
   <label for="lang-selector">Language:</label>
   <select id="lang-selector" onchange="changeLanguage(this.value)">
-    <option value="es" selected>Español</option>
-    <option value="fr">Français</option>
+    <option value="es">Español</option>
+    <option value="fr"selected>Français</option>
+    <option value="en">English</option>
   </select>
 </div>
 
 <script>
   function changeLanguage(lang) {
     var url;
-    var basePath = '/davsbusinesstranslations'; // Ruta base de tu repositorio
+    var basePath = '/davsbusinesstranslations'; // Ruta base del repositorio
 
     if (lang === 'fr') {
       url = basePath + '/FR/index-fr.html';
+    } else if (lang === 'en') {
+      url = basePath + '/EN/index-en.html';
     } else {
       url = basePath + '/index.html';
     }
