@@ -143,5 +143,19 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+
+<script>
+  function changeLanguage(lang) {
+    var url;
+    if (lang === 'fr') {
+      url = 'FR/' + window.location.pathname.split('/').pop().replace('.html', '-fr.html');
+    } else {
+      url = window.location.pathname.split('/').pop().replace('-fr.html', '.html');
+    }
+    window.location.href = url;
+  }
+</script>
+
+
 </body>
 </html>
