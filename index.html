@@ -46,13 +46,30 @@
   </header>
 
   <!-- Selector de idioma -->
-  <div class="language-selector">
-    <label for="lang-selector">Language:</label>
-    <select id="lang-selector" onchange="changeLanguage(this.value)">
-      <option value="es">Español</option>
-      <option value="fr">Français</option>
-    </select>
-  </div>
+<div class="language-selector">
+  <label for="lang-selector">Language:</label>
+  <select id="lang-selector" onchange="changeLanguage(this.value)">
+    <option value="es" selected>Español</option>
+    <option value="fr">Français</option>
+  </select>
+</div>
+
+<script>
+  function changeLanguage(lang) {
+    var url;
+    var pageName = window.location.pathname.split('/').pop(); // Obtiene el nombre del archivo actual
+
+    if (lang === 'fr') {
+      url = 'FR/' + pageName.replace('.html', '-fr.html');
+    } else {
+      url = pageName.replace('-fr.html', '.html');
+    }
+
+    // Redirige a la nueva URL en el idioma seleccionado
+    window.location.href = url;
+  }
+</script>
+
   <section class="hero">
     <div class="container">
       <h1>Dav's Business & Translations</h1>
@@ -142,20 +159,6 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
-<!--End of Tawk.to Script-->
-
-
-<script>
-  function changeLanguage(lang) {
-    var url;
-    if (lang === 'fr') {
-      url = 'FR/' + window.location.pathname.split('/').pop().replace('.html', '-fr.html');
-    } else {
-      url = window.location.pathname.split('/').pop().replace('-fr.html', '.html');
-    }
-    window.location.href = url;
-  }
-</script>
-
+<!--End of Tawk.to Script-->
 </body>
 </html>
