@@ -64,13 +64,12 @@
 <script>
   function changeLanguage(lang) {
     var url;
-    var path = window.location.pathname.split('/'); // Divide la URL en partes
-    var repo = path[1]; // Nombre del repositorio en GitHub Pages
+    var basePath = '/davsbusinesstranslations'; // Ruta base de tu repositorio
 
     if (lang === 'fr') {
-      url = '/' + repo + '/FR/index-fr.html';
+      url = basePath + '/FR/index-fr.html';
     } else {
-      url = '/' + repo + '/index.html';
+      url = basePath + '/index.html';
     }
 
     // Redirige a la nueva URL en el idioma seleccionado
