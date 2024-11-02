@@ -64,11 +64,13 @@
 <script>
   function changeLanguage(lang) {
     var url;
+    var path = window.location.pathname.split('/'); // Divide la URL en partes
+    var repo = path[1]; // Nombre del repositorio en GitHub Pages
 
     if (lang === 'fr') {
-      url = window.location.origin + '/FR/index-fr.html';
+      url = '/' + repo + '/FR/index-fr.html';
     } else {
-      url = window.location.origin + '/index.html';
+      url = '/' + repo + '/index.html';
     }
 
     // Redirige a la nueva URL en el idioma seleccionado
