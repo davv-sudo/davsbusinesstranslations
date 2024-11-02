@@ -45,7 +45,14 @@
     </div>
   </header>
 
-  <!-- Selector de idioma -->
+ 
+
+
+
+
+
+
+<!-- Selector de idioma -->
 <div class="language-selector">
   <label for="lang-selector">Language:</label>
   <select id="lang-selector" onchange="changeLanguage(this.value)">
@@ -62,13 +69,19 @@
     if (lang === 'fr') {
       url = 'FR/' + pageName.replace('.html', '-fr.html');
     } else {
-      url = pageName.replace('-fr.html', '.html');
+      url = pageName.replace('-fr.html', '.html'); // Vuelve al archivo en español en el directorio base
     }
 
     // Redirige a la nueva URL en el idioma seleccionado
     window.location.href = url;
   }
 </script>
+
+
+
+
+
+
 
   <section class="hero">
     <div class="container">
