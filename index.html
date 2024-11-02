@@ -64,19 +64,17 @@
 <script>
   function changeLanguage(lang) {
     var url;
-    var pageName = window.location.pathname.split('/').pop(); // Obtiene el nombre del archivo actual
 
     if (lang === 'fr') {
-      url = 'FR/' + pageName.replace('.html', '-fr.html');
+      url = window.location.origin + '/FR/index-fr.html';
     } else {
-      url = pageName.replace('-fr.html', '.html'); // Vuelve al archivo en español en el directorio base
+      url = window.location.origin + '/index.html';
     }
 
     // Redirige a la nueva URL en el idioma seleccionado
     window.location.href = url;
   }
 </script>
-
 
 
 
