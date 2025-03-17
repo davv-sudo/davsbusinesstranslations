@@ -1,0 +1,456 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e5e3e3;
+    color: #031a31d0;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #031932d9;
+    color: #b3b3b3;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 10%;
+}
+
+/* Estilos de la navegación */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d1d2d3;
+}
+
+/* Estilos de la sección hero */
+.hero {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #031932d9;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    animation: fadeInUp 1s;
+}
+
+.hero .btn {
+    padding: 10px 30px;
+    background-color: #031932d9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #777;
+}
+
+/* Estilos comunes para secciones como features, gallery, testimonials, etc. */
+.features, .gallery, .testimonials, .section .message {
+    background-color: #d1d1d1;
+    text-align: center;
+    padding: 60px 0;
+}
+
+/* Contenedor de las secciones */
+.features .container, .gallery .container, .testimonials .container, .section .container {
+    display: flex;
+    /*flex-direction: column;*/ /* Asegura que el título esté arriba */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    flex-wrap: wrap;
+}
+
+/* Estilos para los títulos de las secciones (h2) */
+.features h2, .gallery h2, .testimonials h2, .section h2, .message h2 {
+    width: 100%; /* Asegura que el título ocupe todo el ancho */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 40px; /* Espacio debajo del título */
+    font-size: 28px; /* Tamaño del título */
+    color: #0e2d4e; /* Color del título */
+}
+
+/* Estilos para los títulos dentro de las tarjetas (h3) */
+.features .feature h2, .section .feature h2, .section .service-section h3, .team-member h3 {
+    text-align: center; /* Centra solo los títulos h3 */
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #0e2d4e;
+}
+
+/* Estilos para las tarjetas de características, servicios, equipo, etc. */
+.features .feature, .section .feature, .section .service-section, .team-member {
+    position: relative;
+    flex: 1 1 30%;
+    margin: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center; /* El contenido dentro de las tarjetas se alinea a la izquierda */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out;
+}
+
+.features .feature:hover, .section .feature:hover, .section .service-section:hover, .team-member:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilos para los íconos en las tarjetas */
+.features .feature i, .message i {
+    display: block;
+    font-size: 48px;
+    margin: 0 auto 20px;
+    color: #0d365bd5;
+}
+
+/* Estilos para los párrafos dentro de las tarjetas */
+.features .feature p, .section .feature p, .section .service-section p, .team-member p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* Eliminar los puntos predeterminados de las listas */
+.service-section ul {
+    list-style-type: none; /* Elimina los puntos */
+    padding-left: 0; /* Elimina el padding izquierdo predeterminado */
+}
+
+/* Agregar íconos de Font Awesome */
+.service-section ul li {
+    position: relative; /* Necesario para posicionar el ícono */
+    padding-left: 25px; /* Espacio para el ícono */
+    margin-bottom: 10px; /* Espacio entre elementos de la lista */
+}
+
+.service-section ul li::before {
+    content: "\f058"; /* Código del ícono de Font Awesome (check-circle) */
+    font-family: "Font Awesome 5 Free"; /* Familia de fuentes de Font Awesome */
+    font-weight: 900; /* Peso de la fuente para íconos sólidos */
+    font-size: 18px; /* Tamaño del ícono */
+    color: #0e2d4e; /* Color del ícono */
+    position: absolute; /* Posiciona el ícono */
+    left: 0; /* Alinea el ícono a la izquierda */
+    top: 30%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajusta la posición vertical */
+}
+
+
+
+
+/* Estilos para la galería */
+.gallery .gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery .gallery-grid img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery .gallery-grid img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para los testimonios */
+.testimonials .testimonial {
+    margin-bottom: 40px;
+    animation: fadeIn 1s;
+}
+
+.testimonials .testimonial p {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #0d325de6;
+}
+
+.testimonials .testimonial h3 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #0d3064;
+}
+
+/* Estilos para los miembros del equipo */
+.team-member img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la sección de mensajes */
+.message {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.message .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out;
+}
+
+.message:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilos para los formularios */
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+input[type="file"]:focus {
+    border-color: #0e2d4e;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #0e2d4e;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0e2d4e;
+}
+
+button:active {
+    background-color: #0e2d4e;
+}
+
+input[type="file"] {
+    padding: 5px;
+}
+
+/* Estilos para el selector de idioma */
+.language-selector {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.language-selector label {
+    font-size: 16px;
+    color: #333;
+}
+
+.language-selector select {
+    font-size: 16px;
+    padding: 8px 12px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #0e2d4e;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.language-selector select:focus {
+    outline: none;
+    border-color: #0e2d4e;
+}
+
+.language-selector select option {
+    background-color: #fff;
+    color: #0e2d4e;
+}
+
+.language-selector select option:checked {
+    background-color: #0e2d4e;
+    color: #fff;
+}
+
+.language-selector select option:hover {
+    background-color: #0e2d4e;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #031932d9;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .social a {
+    color: #ccc;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+footer .social a:hover {
+    color: #fff;
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 40px 0;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 600px) {
+    header .logo img {
+        width: 20%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .features .feature, .section .feature, .section .service-section, .team-member {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .gallery .gallery-grid img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Media Queries para tablets */
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+/* Media Queries para pantallas medianas */
+@media (min-width: 992px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+/* Media Queries para pantallas grandes */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
