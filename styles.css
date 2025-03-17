@@ -325,6 +325,7 @@ nav ul li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-out;
   }
+
   .section .team-member:hover {
     transform: translateY(-10px);
 }
@@ -346,6 +347,134 @@ nav ul li a:hover {
   }
 
 
+
+
+
+
+
+
+
+
+
+
+
+  .message{
+
+      text-align: center;
+      padding: 60px 0;
+  }
+  .message .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      position: relative;
+      flex: 1 1 30%;
+      background-color: #ffffff; /* Color de fondo para cada feature */
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-out;
+  }
+
+  .message:hover {
+      transform: translateY(-10px);
+  }
+
+  .message i {
+      display: block;
+      font-size: 48px;
+      margin: 0 auto 20px;
+      color: #0d365bd5;
+  }
+
+  .message h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #0e2d4e;
+  }
+
+  .message p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+  }
+
+
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+input[type="file"]:focus {
+    border-color: #0e2d4e;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #0e2d4e;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0e2d4e;
+}
+
+button:active {
+    background-color: #0e2d4e;
+}
+
+input[type="file"] {
+    padding: 5px;
+}
+
+@media (max-width: 600px) {
+    .section {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Styles for language selector */
 .language-selector {
     margin-top: 20px;
@@ -363,7 +492,7 @@ nav ul li a:hover {
     border: 2px solid #333;
     border-radius: 5px;
     background-color: #fff;
-    color: #333;
+    color: #0e2d4e;;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -371,21 +500,21 @@ nav ul li a:hover {
   
   .language-selector select:focus {
     outline: none;
-    border-color: #007bff;
+    border-color: #0e2d4e;;
   }
   
   .language-selector select option {
     background-color: #fff;
-    color: #333;
+    color: #0e2d4e;;
   }
   
   .language-selector select option:checked {
-    background-color: #007bff;
+    background-color: #0e2d4e;;
     color: #fff;
   }
   
   .language-selector select option:hover {
-    background-color: #007bff;
+    background-color: #0e2d4e;;
     color: #fff;
     cursor: pointer;
   }
