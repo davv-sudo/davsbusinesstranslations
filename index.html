@@ -31,51 +31,61 @@
       <nav>
         <ul>
           <li><a href="#hero">Inicio</a></li>
-          <li><a href="#about">Acerca de nosotros</a></li>
           <li><a href="#services">Servicios</a></li>
           <li><a href="#pricing">Precios</a></li>
+          <li><a href="#about">Acerca de nosotros</a></li>
           <li><a href="#team">Equipo</a></li>
           <li><a href="#contact">Contacto</a></li>
-          <li><a href="FR/index-fr.html">Français</a></li>
+          <li><a href="index-fr.html">Français</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <!-- Selector de idioma -->
-  <div class="language-selector">
-    <label for="lang-selector">Idioma:</label>
-    <select id="lang-selector" onchange="changeLanguage(this.value)">
-      <option value="es" selected>Español</option>
-      <option value="fr">Français</option>
-      <option value="en">English</option>
-    </select>
-  </div>
+<div class="language-selector">
+  <label for="lang-selector">Idioma:</label>
+  <select id="lang-selector" onchange="changeLanguage(this.value)">
+    <option value="es" selected>Español</option>
+    <option value="fr">Français</option>
+    <option value="en">English</option>
+  </select>
+</div>
 
-  <script>
-    function changeLanguage(lang) {
-      var url;
-      var basePath = '/davsbusinesstranslations'; // Ruta base del repositorio
+<script>
+  // Función que cambia el idioma
+  function changeLanguage(lang) {
+    var url;
 
-      if (lang === 'fr') {
-        url = basePath + '/FR/index-fr.html';
-      } else if (lang === 'en') {
-        url = basePath + '/EN/index-en.html';
-      } else {
-        url = basePath + '/index.html';
-      }
-
-      // Redirige a la nueva URL en el idioma seleccionado
-      window.location.href = url;
+    // Si el idioma seleccionado es francés, inglés o español, redirige a la página correspondiente
+    if (lang === 'fr') {
+      url = 'index-fr.html';
+    } else if (lang === 'en') {
+      url = 'index-en.html';
+    } else {
+      url = 'index.html';
     }
-  </script>
+
+    // Redirige a la nueva URL en el idioma seleccionado
+    window.location.href = url;
+  }
+
+  // Mantener el selector de idioma en el idioma actual al cargar la página
+  window.onload = function() {
+    var currentLang = window.location.pathname.split('/').pop().split('-')[1].split('.')[0] || 'es'; // Obtiene el idioma de la URL
+    document.getElementById('lang-selector').value = currentLang; // Establece el idioma actual en el selector
+  };
+</script>
+
+
+
 
   <!-- Sección Hero -->
   <section id="hero" class="hero">
     <div class="container">
       <h1>Dav's Business & Translations</h1>
       <p>Soluciones integrales para tus necesidades empresariales y de traducción.</p>
-      <a href="services.html" class="btn">Descubre nuestros servicios</a>
+      <a href="#services" class="btn">Descubre nuestros servicios</a>
     </div>
   </section>
 
@@ -104,17 +114,6 @@
         <i class="fas fa-laptop-code"></i>
         <h2>Desarrollo Web</h2>
         <p>Desarrollamos sitios web modernos y funcionales para tu empresa.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección de galería -->
-  <section class="gallery">
-    <div class="container">
-      <h2>Galería</h2>
-      <div class="gallery-grid">
-        <img src="images/photo1.jpg" alt="Foto 1">
-        <img src="images/photo2.jpg" alt="Foto 2">
       </div>
     </div>
   </section>
@@ -210,6 +209,18 @@
     </div>
   </section>
 
+  <!-- Gallery Section -->
+  <section class="gallery">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="images/photo1.jpg" alt="Photo 1">
+        <img src="images/photo2.jpg" alt="Photo 2">
+      </div>
+    </div>
+  </section>
+
+
   <!-- Sección de Contacto -->
   <section id="contact" class="section">
     <div class="container">
@@ -273,7 +284,7 @@
         <a href="#"><i class="fab fa-linkedin-in"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
       </div>
-      <p>&copy; 2024 Dav's Business & Translations. Todos los derechos reservados.</p>
+      <p>&copy; 2024-2025 Dav's Business & Translations. Todos los derechos reservados.</p>
     </div>
   </footer>
 
