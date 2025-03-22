@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dav's Business & Translations</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="icon" href="logo.png" type="image/png" sizes="any">
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//192.168.43.15/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="Dav's Business & Translations Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="index-fr.html">Français</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Language Selector -->
+  <div class="language-selector">
+    <label for="lang-selector">Language:</label>
+    <select id="lang-selector" onchange="changeLanguage(this.value)">
+      <option value="es">Español</option>
+      <option value="fr">Français</option>
+      <option value="en" selected>English</option>
+    </select>
+  </div>
+
+  <script>
+    // Function to change language
+    function changeLanguage(lang) {
+      var url;
+
+      if (lang === 'fr') {
+        url = 'index-fr.html';
+      } else if (lang === 'es') {
+        url = 'index.html';
+      } else {
+        url = 'index-en.html';
+      }
+
+      window.location.href = url;
+    }
+
+    window.onload = function() {
+      var currentLang = window.location.pathname.split('/').pop().split('-')[1].split('.')[0] || 'en';
+      document.getElementById('lang-selector').value = currentLang;
+    };
+  </script>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <h1>Dav's Business & Translations</h1>
+      <p>Comprehensive solutions for your business and translation needs.</p>
+      <a href="#services" class="btn">Explore Our Services</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <div class="feature">
+        <i class="fas fa-globe"></i>
+        <h2>Multilingual Translation</h2>
+        <p>We provide translation services in over 4 languages.</p>
+      </div>
+
+      <div class="feature">
+        <i class="fas fa-robot"></i>
+        <h2>Chatbot Creation</h2>
+        <p>We build powerful chatbots to expand and optimize your business.</p>
+      </div>
+
+      <div class="feature">
+        <i class="fas fa-headset"></i>
+        <h2>Virtual Assistant Services</h2>
+        <p>We offer online support through virtual assistants who manage customer inquiries and perform various tasks.</p>
+      </div>
+
+      <div class="feature">
+        <i class="fas fa-laptop-code"></i>
+        <h2>Web Development</h2>
+        <p>We develop modern and functional websites tailored to your business needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="feature">
+        <h2>About Us</h2>
+        <p>Dav's Business & Translations operates in various fields, from linguistic work to IT and business (selling products).</p>
+        <p>Our team of experts in each domain is committed to excellence and customer satisfaction. We work closely with clients to understand their needs and offer customized solutions that drive their success.</p>
+        <p>While based in Japan, our company is mainly online, where we conduct all our operations. We ensure secure transactions for our clients.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="service-section">
+        <h3>Translation and Localization</h3>
+        <p>We offer professional translation and localization services for a wide range of needs:</p>
+        <ul>
+          <li>Translation of technical and general documents.</li>
+          <li>Website localization to adapt content for different markets and cultures.</li>
+          <li>Subtitling and translation of audiovisual content.</li>
+        </ul>
+      </div>
+      <div class="service-section">
+        <h3>Transcription Services</h3>
+        <ul>
+          <li>We provide accurate transcription services for various audio and video formats.</li>
+        </ul>
+      </div>
+      <div class="service-section">
+        <h3>Chatbot and Website Development</h3>
+        <p>Our team specializes in creating and maintaining websites and chatbots:</p>
+        <ul>
+          <li>Custom website design and development.</li>
+          <li>Implementation of chatbots tailored to specific client needs.</li>
+          <li>Ongoing website maintenance and updates.</li>
+        </ul>
+      </div>
+      <div class="service-section">
+        <h3>Electronic Product Sales</h3>
+        <ul>
+          <li>Coming soon: a variety of electronic products available through our online catalog.</li>
+        </ul>
+      </div>
+      <div class="service-section">
+        <h3>Collaboration and Contact</h3>
+        <p>We are open to collaborating with talented individuals in various fields. If you have skills to offer, reach out to us:</p>
+        <ul>
+          <li>Email us at <a href="mailto:davs-business-translations@tuta.com">davs-business-translations@tuta.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="section">
+    <div class="container">
+      <div class="feature">
+        <h2>Pricing</h2>
+        <p>Our prices vary based on project complexity and scope. We offer competitive and flexible rates to ensure our services are accessible to businesses of all sizes.</p>
+        <p>For products, each item has its own price, which can be found in the product list or received from our online assistant.</p>
+        <p>For web development, pricing depends on the project, so feel free to reach out to us for a customized quote.</p>
+        <p>Contact us for a personalized estimate based on your specific needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="section">
+    <div class="container">
+      <h2>Meet the Team</h2>
+      <p>Get to know the expert team at Dav's Business & Translations who are here to assist you:</p>
+      <div class="team-member">
+        <img src="team-member1.jpg" alt="Team Member 1">
+        <h3>Conan san</h3>
+        <p>Director of Dav's Business & Translations</p>
+      </div>
+      <div class="team-member">
+        <img src="team-member2.jpg" alt="Team Member 2">
+        <h3>Conan san</h3>
+        <p>Project Manager</p>
+      </div>
+      <div class="team-member">
+        <img src="team-member3.jpg" alt="Team Member 3">
+        <h3>Conan san</h3>
+        <p>Translator, Interpreter, Programmer</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Gallery Section -->
+  <section class="gallery">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="images/photo1.jpg" alt="Photo 1">
+        <img src="images/photo2.jpg" alt="Photo 2">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="feature">
+        <h2>Contact Us</h2>
+        <p>For more information about our services or for assistance, feel free to reach out:</p>
+        <p><strong>Email:</strong> <a href="mailto:davs-business-translations@tutamail.com">davs-business-translations@tutamail.com</a></p>
+        <p><strong>Office Address:</strong> Osaka, Japan</p>
+        <p>We look forward to helping you achieve your linguistic and business goals!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Message Section -->
+  <section id="message" class="message">
+    <div class="container">
+      <h2>Messages</h2>
+      <form id="message-form" action="process_message.php" method="post" enctype="multipart/form-data">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div>
+          <label for="file">Attach File:</label>
+          <input type="file" id="file" name="file">
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="testimonial">
+        <p>"Dav's Business & Translations transformed our international market presence. Their team is amazing."</p>
+        <h3>- Juan</h3>
+      </div>
+      <div class="testimonial">
+        <p>"The quality of their translation services is unmatched. Highly recommend."</p>
+        <h3>- María</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="social">
+        <a href="https://www.facebook.com/davsbusinesstranslations"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>&copy; 2024-2025 Dav's Business & Translations. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Additional Scripts -->
+  <script src="scripts.js"></script>
+  <!-- Start of Tawk.to Script -->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/60b08d2270173b1e9c6c32a7/1ft9ljfcs';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+  <!-- End of Tawk.to Script -->
+</body>
+</html>
